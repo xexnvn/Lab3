@@ -1,6 +1,6 @@
 # Eva
 # Multi Calculator
-# 
+# Calculate two numbers and display the result
 
 # 1. Input
 x1 = input("Enter x1: ")
