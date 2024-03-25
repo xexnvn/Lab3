@@ -20,7 +20,7 @@ while True:
     
     # 3. Output
     print(f"Sum: {sum}")
-    res = input("Continue? (Yes/No)")
+    res = input("Continue? (Yes/No): ")
     if res == "No":
         print("Exit")
         break;
