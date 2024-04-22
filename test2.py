@@ -3,12 +3,12 @@
 # Calculator
 # 
 
-# 1. Input
-x1 = input("Type x1")
-x2 = input("Type x2")
+# 1. Function to calculate the add of two numbers
+def add(x1, x2):
+    return x1 + x2
 
-# 2. Process
-sum = x1 + x2
+# 2. Function call
+y = add(10, 20)
 
-# 3. Output
-print(sum)
+# 3. Print result
+print(y)
