@@ -13,6 +13,7 @@ def cal(x1, x2, op):
        sum = int(x1) * int(x2)
     elif op == "/":
        sum = int(x1) / int(x2)
+    return sum
 
 # 1. Input
 x1 = input("Type x1: ")
