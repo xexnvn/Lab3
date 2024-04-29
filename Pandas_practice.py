@@ -30,3 +30,7 @@ df["outcome"].value_counts()
 df["smoker"].mean()
 df["treatment"].mean()
 df["outcome"].mean()
+
+# Sum
+df.sum()
+df.sum(axis = 1)
