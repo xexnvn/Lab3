@@ -32,5 +32,5 @@ df["treatment"].mean()
 df["outcome"].mean()
 
 # Sum
-df.sum()
-df.sum(axis = 1)
+print(df.sum())
+print(df.sum(axis = 1))
