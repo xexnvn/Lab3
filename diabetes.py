@@ -46,5 +46,6 @@ df2['Glucose_Insulin_Ratio'] = df2['Glucose'] / df2['Insulin']
 # print(df.groupby(['Pregnancies', 'Outcome']).value_counts(sort = False))
 # print(df.groupby(['Pregnancies', 'Outcome']).value_counts(normalize = True))
 
-df[['BMI', 'Glucose']].plt.line()
+df[['BMI', 'Glucose']].plot.line()
+plt.title('Eva')
 plt.show()
