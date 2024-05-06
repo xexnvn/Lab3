@@ -48,4 +48,9 @@ df2['Glucose_Insulin_Ratio'] = df2['Glucose'] / df2['Insulin']
 
 df[['BMI', 'Glucose']].plot.line()
 plt.title('Eva')
+# plt.show()
+
+df[['BMI', 'Glucose']].plot.line(figsize = (10, 5), 
+                                 color = {'BMI': 'red', 'Glucose': 'blue'})
+plt.title('Eva')
 plt.show()
