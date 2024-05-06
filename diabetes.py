@@ -54,3 +54,15 @@ df[['BMI', 'Glucose']].plot.line(figsize = (10, 5),
                                  color = {'BMI': 'red', 'Glucose': 'blue'})
 plt.title('Eva')
 plt.show()
+
+df.plot.line(subplots = True)
+plt.title('Eva')
+plt.show()
+
+df['Outcome'].value_counts().plot.bar()
+plt.title('Eva')
+plt.show()
+
+df.boxplot(column = ['BMI'], by = 'Outcome')
+plt.title('Eva')
+plt.show()
