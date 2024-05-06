@@ -32,38 +32,35 @@ df3 = df3.dropna()
 print(df3.shape)
 
 # Create a new column
-df2['Glucose_Insulin_Ratio'] = df2['Glucose'] / df2['Insulin']
+df2["Glucose_Insulin_Ratio"] = df2["Glucose"] / df2["Insulin"]
 print(df2.head())
 
-# print(df['Outcome'].value_counts())
-# print(df['Outcome'].value_counts(sort = False))
-# print(df['Outcome'].value_counts(normalize = True))
+# print(df["Outcome"].value_counts())
+# print(df["Outcome"].value_counts(sort = False))
+# print(df["Outcome"].value_counts(normalize = True))
 
 # Data by group
-# print(df.groupby('Outcome').mean())
-# print(df.groupby(['Pregnancies', 'Outcome']).mean())
-# print(df.groupby(['Pregnancies', 'Outcome']).value_counts())
-# print(df.groupby(['Pregnancies', 'Outcome']).value_counts(sort = False))
-# print(df.groupby(['Pregnancies', 'Outcome']).value_counts(normalize = True))
+# print(df.groupby("Outcome").mean())
+# print(df.groupby(["Pregnancies", "Outcome"]).mean())
+# print(df.groupby(["Pregnancies", "Outcome"]).value_counts())
+# print(df.groupby(["Pregnancies", "Outcome"]).value_counts(sort = False))
+# print(df.groupby(["Pregnancies", "Outcome"]).value_counts(normalize = True))
 
 # Visualize by chart 
-df[['BMI', 'Glucose']].plot.line()
-plt.title('Eva')
+df[["BMI", "Glucose"]].plot.line()
+plt.title("Eva")
 plt.show()
 
-df[['BMI', 'Glucose']].plot.line(figsize = (10, 5), 
-                                 color = {'BMI': 'red', 'Glucose': 'blue'})
-plt.title('Eva')
+df[["BMI", "Glucose"]].plot.line(figsize = (10, 5), 
+                                 color = {"BMI": "red", "Glucose": "blue"})
+plt.title("Eva")
 plt.show()
 
 df.plot.line(subplots = True)
-plt.title('Eva')
 plt.show()
 
-df['Outcome'].value_counts().plot.bar()
-plt.title('Eva')
+df["Outcome"].value_counts().plot.bar()
 plt.show()
 
-df.boxplot(column = ['BMI'], by = 'Outcome')
-plt.title('Eva')
+df.boxplot(column = ["BMI"], by = "Outcome")
 plt.show()
